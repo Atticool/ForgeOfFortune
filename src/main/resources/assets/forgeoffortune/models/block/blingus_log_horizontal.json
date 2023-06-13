@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "forgeoffortune:block/blingus_log_top",
+    "side": "forgeoffortune:block/blingus_log_side"
+  }
+}
