@@ -25,14 +25,14 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BLINGUS_ORE = registerBlock("blingus_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(2,6)));
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE), UniformInt.of(2,6)));
     public static final RegistryObject<Block> DEEPSLATE_BLINGUS_ORE = registerBlock("deepslate_blingus_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE), UniformInt.of(2, 6)));
 
     public static final RegistryObject<Block> BLINGUS_BLOCK = registerBlock("blingus_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
-                    .strength(6f).requiresCorrectToolForDrops()));
+                    .strength(6f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
     public static final RegistryObject<Block> BLINGUS_LOG = registerBlock("blingus_log",
             () -> new Block(BlockBehaviour.Properties.of(Material.WOOD)
