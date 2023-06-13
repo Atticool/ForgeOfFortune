@@ -71,8 +71,8 @@ public class ForgeOfFortune
             event.accept(ModItems.RAW_BLINGUS);
             event.accept(ModBlocks.BLINGUS_ORE);
             event.accept(ModBlocks.DEEPSLATE_BLINGUS_ORE);
-            event.accept(ModBlocks.BLINGUS_PLANKS);
             event.accept(ModBlocks.BLINGUS_LOG);
+            event.accept(ModBlocks.BLINGUS_PLANKS);
 
 
         }
