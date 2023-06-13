@@ -1,6 +1,7 @@
 package com.teamelemental.forgeoffortune;
 
 import com.mojang.logging.LogUtils;
+import com.teamelemental.forgeoffortune.block.ModBlocks;
 import com.teamelemental.forgeoffortune.item.ModCreativeModeTabs;
 import com.teamelemental.forgeoffortune.item.ModItems;
 import net.minecraft.client.Minecraft;
@@ -49,6 +50,7 @@ public class ForgeOfFortune
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
 
 
@@ -66,6 +68,7 @@ public class ForgeOfFortune
         if(event.getTab() == ModCreativeModeTabs.FOF_TAB) {
             event.accept(ModItems.BLINGOT);
             event.accept(ModItems.RAW_BLINGUS);
+            event.accept(ModBlocks.BLINGUS_ORE);
         }
     }
 
