@@ -1,11 +1,14 @@
 package com.teamelemental.forgeoffortune.block;
 
 
+import com.mojang.blaze3d.shaders.Uniform;
 import com.teamelemental.forgeoffortune.ForgeOfFortune;
 import com.teamelemental.forgeoffortune.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -20,6 +23,13 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, ForgeOfFortune.MOD_ID);
 
     public static final RegistryObject<Block> BLINGUS_ORE = registerBlock("blingus_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(2,6)));
+    public static final RegistryObject<Block> DEEPSLATE_BLINGUS_ORE = registerBlock("deepslate_blingus_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.METAL)
+                    .strength(6f).requiresCorrectToolForDrops(), UniformInt.of(2, 6)));
+
+    public static final RegistryObject<Block> BLINGUS_BLOCK = registerBlock("blingus_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.METAL)
                     .strength(6f).requiresCorrectToolForDrops()));
 
