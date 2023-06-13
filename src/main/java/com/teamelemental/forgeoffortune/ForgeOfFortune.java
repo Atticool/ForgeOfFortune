@@ -1,6 +1,7 @@
 package com.teamelemental.forgeoffortune;
 
 import com.mojang.logging.LogUtils;
+import com.teamelemental.forgeoffortune.item.ModCreativeModeTabs;
 import com.teamelemental.forgeoffortune.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
@@ -62,7 +63,7 @@ public class ForgeOfFortune
     }
 
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
-        if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
+        if(event.getTab() == ModCreativeModeTabs.FOF_TAB) {
             event.accept(ModItems.BLINGOT);
             event.accept(ModItems.RAW_BLINGUS);
         }
