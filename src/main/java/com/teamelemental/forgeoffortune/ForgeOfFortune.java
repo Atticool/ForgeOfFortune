@@ -64,6 +64,7 @@ public class ForgeOfFortune
     private void addCreative(CreativeModeTabEvent.BuildContents event) {
         if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BLINGOT);
+            event.accept(ModItems.RAW_BLINGUS);
         }
     }
 
